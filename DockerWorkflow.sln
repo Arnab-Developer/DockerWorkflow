@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{055F638A-6EDA-4751-881E-4C83428B8BF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{499C4857-206E-4AE0-B89D-AEA514D5D35A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWorkflow.Lib", "src\DockerWorkflow.Lib\DockerWorkflow.Lib.csproj", "{3CCCF27F-C2C1-4D8F-86F1-1668364EF8FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWorkflow.WebApp", "src\DockerWorkflow.WebApp\DockerWorkflow.WebApp.csproj", "{6FCD53CE-9A7D-428E-8E4B-423257AC71F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWorkflow.LibTest", "tests\DockerWorkflow.LibTest\DockerWorkflow.LibTest.csproj", "{8402FD4C-2AEA-464D-9601-7CA8272296EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerWorkflow.WebAppTest", "tests\DockerWorkflow.WebAppTest\DockerWorkflow.WebAppTest.csproj", "{1446CAE8-BC17-4933-A012-97615F12393C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{16F413B6-F6C9-41D0-85BC-B7A8B9E07323}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.github\workflows\ci-cd.yml = .github\workflows\ci-cd.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CCCF27F-C2C1-4D8F-86F1-1668364EF8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CCCF27F-C2C1-4D8F-86F1-1668364EF8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CCCF27F-C2C1-4D8F-86F1-1668364EF8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CCCF27F-C2C1-4D8F-86F1-1668364EF8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FCD53CE-9A7D-428E-8E4B-423257AC71F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCD53CE-9A7D-428E-8E4B-423257AC71F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCD53CE-9A7D-428E-8E4B-423257AC71F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCD53CE-9A7D-428E-8E4B-423257AC71F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8402FD4C-2AEA-464D-9601-7CA8272296EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8402FD4C-2AEA-464D-9601-7CA8272296EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8402FD4C-2AEA-464D-9601-7CA8272296EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8402FD4C-2AEA-464D-9601-7CA8272296EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1446CAE8-BC17-4933-A012-97615F12393C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1446CAE8-BC17-4933-A012-97615F12393C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1446CAE8-BC17-4933-A012-97615F12393C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1446CAE8-BC17-4933-A012-97615F12393C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CCCF27F-C2C1-4D8F-86F1-1668364EF8FA} = {055F638A-6EDA-4751-881E-4C83428B8BF4}
+		{6FCD53CE-9A7D-428E-8E4B-423257AC71F5} = {055F638A-6EDA-4751-881E-4C83428B8BF4}
+		{8402FD4C-2AEA-464D-9601-7CA8272296EE} = {499C4857-206E-4AE0-B89D-AEA514D5D35A}
+		{1446CAE8-BC17-4933-A012-97615F12393C} = {499C4857-206E-4AE0-B89D-AEA514D5D35A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5950F82-FEAD-4ECE-AE85-A3158CCB69C0}
+	EndGlobalSection
+EndGlobal
