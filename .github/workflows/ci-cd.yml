@@ -17,7 +17,7 @@ env:
   DOCKERHUB_IMAGE_NAME: 45862391/DockerWorkflow:1.0.0
   DOCKERHUB_USER: 45862391  
   GITHUB_DOCKER: https://docker.pkg.github.com
-  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/DockerWorkflow/dockerworkflow:1.0.0
+  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/dockerworkflow/dockerworkflow:1.0.0
   GITHUB_DOCKER_USER: Arnab-Developer
 
 jobs:
