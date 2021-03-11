@@ -17,7 +17,7 @@ env:
   DOCKERHUB_IMAGE_NAME: 45862391/dockerworkflow:2.0.0
   DOCKERHUB_USER: 45862391  
   GITHUB_DOCKER: https://docker.pkg.github.com
-  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/dockerworkflow/dockerworkflow:2.0.0
+  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/dockerworkflow/dockerworkflow:2.1.0
   GITHUB_DOCKER_USER: Arnab-Developer
 
 jobs:
@@ -58,7 +58,7 @@ jobs:
       run: docker build -f ${{ env.DOCKER_FILE }} -t ${{ env.GITHUB_IMAGE_NAME }} .
     - name: Push docker image
       run: |
-        docker login ${{ env.GITHUB_DOCKER }} -u ${{ env.GITHUB_DOCKER_USER }} -p '${{ secrets.GITHUB_TOKEN }}'
+        echo "${{ secrets.GITHUB_TOKEN }}" | docker login ${{ env.GITHUB_DOCKER }} -u ${{ env.GITHUB_DOCKER_USER }} --password-stdin
         docker push ${{ env.GITHUB_IMAGE_NAME }}
 
   dockerhub-deploy:
@@ -81,5 +81,5 @@ jobs:
       run: docker build -f ${{ env.DOCKER_FILE }} -t ${{ env.DOCKERHUB_IMAGE_NAME }} .
     - name: Push docker image
       run: |
-        docker login -u ${{ env.DOCKERHUB_USER }} -p '${{ secrets.DOCKERHUB_PWD }}'
+        echo "${{ secrets.DOCKERHUB_PWD }}" | docker login -u ${{ env.DOCKERHUB_USER }} --password-stdin
         docker push ${{ env.DOCKERHUB_IMAGE_NAME }}
