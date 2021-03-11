@@ -14,10 +14,10 @@ env:
   WEBAPP_PROJECT: src/DockerWorkflow.WebApp/DockerWorkflow.WebApp.csproj
   PUBLISH_FOLDER: src/DockerWorkflow.WebApp/bin/publish
   DOCKER_FILE: src/DockerWorkflow.WebApp/Dockerfile
-  DOCKERHUB_IMAGE_NAME: 45862391/dockerworkflow:2.0.0
+  DOCKERHUB_IMAGE_NAME: 45862391/dockerworkflow:2.2.0
   DOCKERHUB_USER: 45862391  
   GITHUB_DOCKER: https://docker.pkg.github.com
-  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/dockerworkflow/dockerworkflow:2.1.0
+  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/dockerworkflow/dockerworkflow:2.2.0
   GITHUB_DOCKER_USER: Arnab-Developer
 
 jobs:
