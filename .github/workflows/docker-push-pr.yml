@@ -14,7 +14,7 @@ env:
   PUBLISH_FOLDER: src/DockerWorkflow.WebApp/bin/publish
   DOCKER_FILE: src/DockerWorkflow.WebApp/Dockerfile  
   GITHUB_DOCKER: https://docker.pkg.github.com
-  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/DockerWorkflow/DockerWorkflow:${{ github.event.inputs.dockerImageVersion }}
+  GITHUB_IMAGE_NAME: docker.pkg.github.com/arnab-developer/dockerworkflow/dockerworkflow:${{ github.event.inputs.dockerImageVersion }}
   GITHUB_DOCKER_USER: Arnab-Developer
 
 jobs:
