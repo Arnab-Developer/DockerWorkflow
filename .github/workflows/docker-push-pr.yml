@@ -49,7 +49,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Publish
-      run: dotnet publish ${{ env.WEBAPP_PROJECT }} --configuration {{env.CONFIGURATION}} -o ${{ env.PUBLISH_FOLDER }}
+      run: dotnet publish ${{ env.WEBAPP_PROJECT }} --configuration ${{env.CONFIGURATION}} -o ${{ env.PUBLISH_FOLDER }}
     - name: Create docker image
       run: docker build -f ${{ env.DOCKER_FILE }} -t ${{ env.GITHUB_IMAGE_NAME }} .
     - name: Push docker image
